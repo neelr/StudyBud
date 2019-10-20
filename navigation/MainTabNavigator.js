@@ -20,7 +20,7 @@ const TipStack = createStackNavigator(
 );
 
 TipStack.navigationOptions = {
-  tabBarLabel: 'Tips',
+  tabBarLabel: 'StudyBud',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -35,21 +35,6 @@ TipStack.navigationOptions = {
 
 TipStack.path = '';
 
-const SearchStack = createStackNavigator(
-  {
-    Search: SearchScreen,
-  },
-  config
-);
-
-SearchStack.navigationOptions = {
-  tabBarLabel: 'Search',
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-search' : 'md-search'} />
-  ),
-};
-
-SearchStack.path = '';
 
 const SettingsStack = createStackNavigator(
   {
@@ -69,7 +54,6 @@ SettingsStack.path = '';
 
 const tabNavigator = createBottomTabNavigator({
   TipStack,
-  SearchStack,
   SettingsStack,
 });
 

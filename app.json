@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "TipApp",
-    "slug": "TipApp",
+    "name": "StudyBud",
+    "slug": "StudyBud",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [
